@@ -1,0 +1,53 @@
+*{
+    margin-left: 0px;
+}
+.header{
+    display: flex;
+
+
+}
+.nav{
+    margin-top: 20px;
+
+    
+}
+.user {
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+.user a{
+    margin: 20px;
+    text-decoration: none;
+    padding-left: 80px;
+    color: black;
+    font-weight: 520;
+    font-style:bold;
+    color:rgba(0, 0, 0, 0.541);
+}
+.nav a{
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 520;
+    font-style:bold;
+    color:rgba(0, 0, 0, 0.541);
+    
+}
+.logo{
+    margin-left: 50px;
+    display: flex;
+    
+}
+.logo img{
+    height: 50px;
+}
+.logo h3{
+    font-weight: 700;
+
+}
+#register{
+    color: orange;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid orange;
+}
