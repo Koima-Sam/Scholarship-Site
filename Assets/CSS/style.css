@@ -1,8 +1,10 @@
 *{
     margin-left: 0px;
 }
-.header{
+.header,.nav-links{
     display: flex;
+    justify-content: space-between;
+
 
 
 }
@@ -12,8 +14,9 @@
     
 }
 .user {
+    float: right;
     margin-top: 20px;
-    margin-left: 250px;
+    
 }
 
 .user a{
