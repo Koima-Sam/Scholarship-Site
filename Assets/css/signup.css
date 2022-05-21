@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+
+.header{
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+body{
+    
+    overflow-x: hidden;
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+}
+
+.header, .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.4;
+}
+.header > .header-text{
+    padding: 2% 0 2% 3% ;
+    width: 50%;
+}
+.header > .header-text > h2{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.header > .logo > a > img{
+    height: 60px;
+}
+.header > .logo{
+    /* padding-right: 40%;
+    padding-left: 20%;
+    margin-left: 10%; */
+    width: 50%;
+}
+.header > .logo >h3{
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #0863A6;
+    position: relative;
+    top: 0px;
+
+}
+.lgn{
+    margin-left: 5%;
+    
+
+}
+.lgin{
+    justify-content: space-evenly;
+    display: flex;
+    width: 50%;
+    width: 100%;
+}
+.img-bg{
+    width: 50%;
+    
+}
+.signup{
+    width: 300px;
+
+}
+
+.txtinput{
+    width: 80%;
+    margin: 20px 0 20px 0px;
+    padding: 10px 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    outline: none;
+    background: transparent;
+}
+
+.form-container{
+    width: 50%;
+    margin-top: 3%;
+    border: 1px solid gainsboro;
+    margin-left: 10%;
+
+}
+
+#register, #login{
+    text-align: center;
+    margin: 50px 100px;
+    background-color: #0863A6;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+.sign > a{
+    text-decoration: none;
+    color: #0863A6;
+
+
+}
+
+.sign-up > i,h3{
+    position: relative;
+    top:50px;
+    left: 0;
+    color: #0863A6;
+
+}
+
+p{
+    margin-left: 50px;
+}
+h3{
+    color: black;
+}
+.social{
+    margin-top:20px;
+    align-items: center;
+    padding-left: 10px;
+    
+
+}
+
+.social > a > img{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 2px;
+
+}
+.sign-in > i{
+    position: relative;
+    top:7px;
+    margin-right: 10px;
+    left: 4px;
+    color: #0863A6;
+
+}
+
+.img-bg > img{
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 0;
+
+}
+
+@media screen and (max-width: 671px){
+    body{
+        overflow-x: hidden;
+    
+    }
+
+    .header > .header-text > h2{
+        font-size: 1.2rem;
+    }
+    .header > .logo >h3{
+        font-weight: 600;
+        font-size: 1.2rem;
+}
+    .form-container{
+        margin-top: 10%;
+    }
+    #register, #login{
+        text-align: center;
+        margin: 20px 100px;
+        background-color: #0863A6;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 5px 20px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+    }
+    .img-bg > img{
+        height: 40%;
+        position: relative;
+        top: 20%;
+        left: 0;
+        
+    
+    }
+    .header{
+        margin-top: 10%;
+    }
+    h3{
+        font-size: 13px;
+    }
+    p{
+        margin-left: 20px;
+    }
+    .lgin{
+        border: 1px solid gainsboro;
+        margin: 1%;
+        margin-bottom: 0;
+    }
+    .login{
+        margin-bottom: 0;
+    }
+}

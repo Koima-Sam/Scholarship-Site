@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="register">
+        <div class="header">
+            <!--Text section-->
+            <div class="header-text">
+                <h2>
+                    Here is your <br>
+                    first step to get<br>
+                    started with us.
+                
+                </h2>
+            </div>
+    
+            <!--Logo container-->
+            <div class="logo">
+                <!--Logo-->
+                <a href=""><img src="../images/logo.jpeg" alt="Link profession logo" class="logo-img"></a>
+                <h3 class="logo-name">LINK PROFESSION</h3>
+    
+            </div>
+        </div>
+        <!--Container for registration form-->
+        <div class="form-container">
+            <form class="sign-up" onsubmit="return(createUser())" name="Register" method="POST">
+                <i class="fa fa-user"></i>
+                <input type="text" id="name" class="txtinput" name="fullname" placeholder="      Your Full Name" > <br>
+
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="email" class="txtinput" name="userEmail" placeholder="       Your email account" ><br>
+
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" class="txtinput" name="userPassword" placeholder="      Create your password" ><br>
+
+                <i class="fa fa-lock"></i>
+                <input type="password" id ="passowrd2" name="userPassword2" class="txtinput" placeholder="       Retype your password" ><br>
+
+            
+                <input type="submit" value="Sign Up" id="register"> 
+
+                <script src="../javascript/users-auth.js"></script>
+            </form>
+                <p>Already have an account ? <span class="sign"> <a href="../pages/signin.html">Sign In</a></span></p>
+
+                <h3>------------Find Our Social Media Pages below:------------</h3>
+            
+    
+           
+            <div class="social">
+                <!--Social meadia handles-->
+                <a href="https://google.com/?lang=en"><img src="../images/google.png" alt="google"></a>
+                <a href="https://twitter.com/?lang=en"><img src="../images/twitter.jpg" alt="twitter"></a>
+                <a href="https://instagram.com/?lang=en"><img src="../images/ig.jpeg" alt="ig"></a>
+                <a href="https://facebook.com/?lang=en"><img src="../images/facebook].png" alt="fb"></a>
+            </div>
+        </div>
+    </body>
+</html>
