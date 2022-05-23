@@ -3,65 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <title>Sign In</title>
     <link rel="stylesheet" href="../css/signup.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/users-auth.js"></script>
+
 </head>
 <body>
-    <div class="register">
-        <div class="header">
-            <!--Text section-->
-            <div class="header-text">
-                <h2>
-                    Here is your <br>
-                    first step to get<br>
-                    started with us.
+        <div class="login">
+            <div class="header">
+                <!--Header text section-->
+                <div class="header-text">
+                    <h2>
+                        Welcome user, <br>
+                        Login to Access<br>
+                        your profile.
+                    
+                    </h2>
+                </div>
+        
+                <!--Logo container-->
+                <div class="logo">
+                    <!--Logo-->
+                    <a href=""><img src="../images/logo.jpeg" alt="Link profession logo" class="logo-img"></a>
+                    <h3 class="logo-name">I.Scholar</h3>
+
+        
+                </div>
+            </div>
+
+            <!--End  of header section-->
+
+            <div class="lgin">
                 
-                </h2>
-            </div>
-    
-            <!--Logo container-->
-            <div class="logo">
-                <!--Logo-->
-                <a href="../../index.html"><img src="../images/logo.jpeg" alt="Link profession logo" class="logo-img"></a>
-                <h3 class="logo-name">I.Scholar</h3>
-    
-            </div>
-        </div>
-        <!--Container for registration form-->
-        <div class="form-container">
-            <form class="sign-up" onsubmit="return(createUser())" name="Register" method="POST">
-                <i class="fa fa-user"></i>
-                <input type="text" id="name" class="txtinput" name="fullname" placeholder="      Your Full Name" > <br>
-
-                <i class="fa fa-envelope"></i>
-                <input type="email" id="email" class="txtinput" name="userEmail" placeholder="       Your email account" ><br>
-
-                <i class="fa fa-lock"></i>
-                <input type="password" id="password" class="txtinput" name="userPassword" placeholder="      Create your password" ><br>
-
-                <i class="fa fa-lock"></i>
-                <input type="password" id ="passowrd2" name="userPassword2" class="txtinput" placeholder="       Retype your password" ><br>
-
+                    <div class="form-container">
+                        <form class="sign-in" id="sign-In" name="login_form"> 
+                            <i class="fa fa-user"></i>
+                            <input type="email" id="email" class="txtinput" name="userEmail" placeholder="       Username" ><br>
             
-                <input type="submit" value="Sign Up" id="register"> 
-
-                <script src="../javascript/users-auth.js"></script>
-            </form>
-                <p>Already have an account ? <span class="sign"> <a href="../pages/signin.html">Sign In</a></span></p>
-
-                <h3>------------Find Our Social Media Pages below:------------</h3>
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password" class="txtinput" name="userPassword" placeholder="      Password" ><br>
+        
+                        
+                            <input type="submit" value="Sign In" id="login"> 
+        
+                            
+                            
+                        </form>
+                            <p>Don't have an account ? <span class="sign"><a href="../pages/signup.html">Sign Up</a> </span></p>
             
-    
-           
-            <div class="social">
-                <!--Social meadia handles-->
-                <a href="https://google.com/?lang=en"><img src="../images/google.png" alt="google"></a>
-                <a href="https://twitter.com/?lang=en"><img src="../images/twitter.jpg" alt="twitter"></a>
-                <a href="https://instagram.com/?lang=en"><img src="../images/ig.jpeg" alt="ig"></a>
-                <a href="https://facebook.com/?lang=en"><img src="../images/facebook].png" alt="fb"></a>
+                            <h3>---Find Our Social Media Pages below:---</h3>
+                        
+                        
+                        <div class="social">
+                            <!--Social meadia handles-->
+                            <a href="https://google.com/?lang=en"><img src="../images/google.png" alt="google"></a>
+                            <a href="https://twitter.com/?lang=en"><img src="../images/twitter.jpg" alt="twitter"></a>
+                            <a href="https://instagram.com/?lang=en"><img src="../images/ig.jpeg" alt="ig"></a>
+                            <a href="https://facebook.com/?lang=en"><img src="../images/facebook].png" alt="fb"></a>
+                            
+                        </div>
+                    </div>
+                <div class="img-bg"> 
+                    <img src="../images/loginbac.png" alt="Login hero">
+
             </div>
+                
+            </div>
+            
         </div>
-    </body>
+
+</body>
 </html>
