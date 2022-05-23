@@ -1,24 +1,24 @@
 *{
     margin-left: 0px;
 }
-.header,.nav-links{
+.header,.nav-links,.intro{
     display: flex;
-    justify-content: space-between;
-
-
-
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.header-container{
+    background-image: url("../images/laern2.jpeg");
+    background-size: cover;
 }
 .nav{
-    margin-top: 20px;
-
-    
+    margin-top: 20px; 
 
 }
 span{
-    color: aquamarine;
+    color: orange;
 }
 .user {
-    float: right;
     margin-top: 20px;
     
 }
@@ -26,7 +26,6 @@ span{
 .user a{
     margin: 20px;
     text-decoration: none;
-    padding-left: 80px;
     color: black;
     font-weight: 520;
     font-style:bold;
@@ -42,7 +41,7 @@ span{
     
 }
 .logo{
-    margin-left: 50px;
+    margin-left: 0px;
     display: flex;
     
 }
@@ -55,6 +54,35 @@ span{
 }
 #register{
     color: orange;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 20px;
     border: 1px solid orange;
+    
+}
+
+#register:hover{
+    color: black;
+    background-color: aqua;
+}
+
+.intro > img{
+   height: 500px;
+}
+
+.intro {
+    font-family:"Poppins";
+    line-height: 1.5;
+    
+
+}
+.intro > h1> span{
+    font-size: 45px;
+    font-weight: 500;
+}
+.intro > h1{
+    font-size: px;
+    font-weight: 400;
+}
+
+.spn2{
+    color: blueviolet;
 }
