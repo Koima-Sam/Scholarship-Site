@@ -102,6 +102,7 @@ body{
     padding: 5px 20px;
     font-weight: 400;
     border: none;
+    cursor: pointer;
     outline: none;
 }
 .sign > a{
