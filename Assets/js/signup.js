@@ -25,5 +25,24 @@ function checkInput(form){
         alert([password.value, password2.value])
         form.userPassword.focus()
     }
+    else{
+        createUser(name,email,password)
+    }
 
+}
+function createUser(name,email,password){
+    fetch('http://localhost:3000/users',{
+        method: "POST",
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+    
+            'id': email,
+            'name': name,
+            'email' : email,
+            'password': password
+        })
+    })
 }
