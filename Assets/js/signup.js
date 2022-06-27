@@ -1,9 +1,21 @@
 document.addEventListener('DOMContentLoaded', (e)=>{
-    document.addEventListener('submit', e=>{
+    e.preventDefault()
+    
+    const loginForm = document.querySelector('#sign-In')
+    loginForm.addEventListener('submit', (e)=>{
         e.preventDefault()
-        checkInput(e.target)
+        loginUser(e.target)
+         
     })
+    
 })
+const signUp = document.querySelector(".sign-up")
+signUp.addEventListener('submit', (ev)=>{
+        ev.preventDefault()
+        checkInput(ev.target)
+       
+        
+    })
 
 //Check if input fields are filled and completed
 function checkInput(form){
@@ -45,4 +57,18 @@ function createUser(name,email,password){
             'password': password
         })
     })
+}
+function loginUser(user){
+    fetch(`http://localhost:3000/users/${user.userEmail.value}`)
+    .then(response => response.json())
+    .then(userInfo =>{
+       userInfo.password === user.password.value ? initiateLogin(): alert("Invalid password")
+    })
+    .catch(error=>{
+        console.log(error)
+        alert('User not found')
+    })
+}
+function initiateLogin(){
+    window.location.href="dashboard.html";
 }
