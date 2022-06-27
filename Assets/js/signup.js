@@ -57,6 +57,10 @@ function createUser(name,email,password){
             'password': password
         })
     })
+    .then(response => response.json())
+    .then(data=>{
+        alert('Registration successful')
+    })
 }
 function loginUser(user){
     fetch(`http://localhost:3000/users/${user.userEmail.value}`)
