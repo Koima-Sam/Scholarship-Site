@@ -11,6 +11,18 @@
       "name": "steve",
       "email": "steve@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "evan@gmail.com",
+      "name": "evans kithinji",
+      "email": "evan@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "j@gmail.com",
+      "name": "jemma",
+      "email": "j@gmail.com",
+      "password": "j123"
     }
   ]
 }
