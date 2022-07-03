@@ -114,9 +114,10 @@ body{
 
 .sign-up > i,h3{
     position: relative;
-    top:50px;
+    top:10px;
     left: 0;
     color: #0863A6;
+    margin-right: 0px;
 
 }
 
